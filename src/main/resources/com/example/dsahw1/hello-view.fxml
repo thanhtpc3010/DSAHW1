@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.dsahw1.HelloController" spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx">
+    <children>
+        <HBox spacing="10">
+            <Label text="Họ tên:"/>
+            <TextField fx:id="nameField"/>
+            <Label text="Tuổi:"/>
+            <TextField fx:id="ageField"/>
+            <Label text="Điểm:"/>
+            <TextField fx:id="salaryField"/>
+            <Button text="Thêm" onAction="#onAddButtonClick"/>
+        </HBox>
+        <TableView fx:id="sinhvienTable">
+            <columns>
+                <TableColumn text="Họ tên" fx:id="nameColumn"/>
+                <TableColumn text="Tuổi" fx:id="ageColumn"/>
+                <TableColumn text="Điểm" fx:id="salaryColumn"/>
+            </columns>
+        </TableView>
+        <Button text="Sắp xếp theo điểm" onAction="#onSortButtonClick"/>
+    </children>
+</VBox>
